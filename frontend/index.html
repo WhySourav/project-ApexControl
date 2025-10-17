@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>F1 Video Sync</title>
+  <style>
+    body { background:#000; color:#fff; text-align:center; font-family:sans-serif; }
+    video { width:80%; margin-top:20px; border:2px solid #333; }
+    .overlay {
+      position:absolute; top:10%; left:10%; background:rgba(0,0,0,0.6);
+      padding:10px 20px; border-radius:8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>F1 Live Telemetry Sync Demo</h2>
+  <video id="raceVideo" src="Bahrain_GP_2025.mp4" controls></video>
+  <div class="overlay" id="telemetryDisplay">Waiting for data...</div>
+  <script src="script.js"></script>
+</body>
+</html>
